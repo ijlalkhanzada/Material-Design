@@ -1,0 +1,23 @@
+
+<div layout="column" flex layout-fill>
+    <md-content layout="column" flex class="md-padding">
+        <md-button  ng-click="colorTiles()"><h3>Test</h3></md-button>
+        <section>
+            <p>Lorem ipsum dolor sit amet, scripta iracundia nec id, unum malis labitur pri ad, ad lucilius praesent definitiones sed. Invenire qualisque ut mea, eam ex alia quidam admodum. Est an graece feugait, mei cibo maiestatis consectetuer no. Magna verear iisque cu vel, no quas nusquam reprehendunt pro.</p>
+        </section>
+        <md-grid-list
+                md-cols-gt-md="14" md-cols-sm="3" md-cols-md="8"
+                md-row-height-gt-md="1:3" md-row-height="4:2"
+                md-gutter-gt-md="1px" md-gutter-gt-sm="8px" md-gutter="4px" style="width: 100%;">
+        <md-grid-tile
+                ng-repeat="tile in tiles"
+                ng-style="{ 'background': tile.color}"
+                md-colspan-gt-sm="{{tile.colspan}}"
+                md-rowspan-gt-sm="{{tile.rowspan}}">
+            <md-icon md-svg-icon="images/t.svg"> </md-icon>
+            <md-grid-tile-header><md-button><span>Header</span></md-button></md-grid-tile-header>
+            <md-grid-tile-footer><span>Footer</span></md-grid-tile-footer>
+        </md-grid-tile>
+        </md-grid-list>
+    </md-content>
+    </div>

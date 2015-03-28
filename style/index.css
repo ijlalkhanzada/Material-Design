@@ -1,0 +1,82 @@
+.md-toolbar-tools img {
+    width: 60px;
+    height: 60px;
+}
+.md-button.active {
+    color: #03a9f4;
+}
+#one{
+    background: #88c3f5; }
+#one md-icon{
+    height: 100% !important;
+    width: 100% !important;
+}
+.md-subheader {
+    background-color: #dcedc8;
+    margin: 0;
+}
+.info{
+    color: #03a9f4 !important;  }
+.face {
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin: 4px 16px;
+    vertical-align: middle;
+    width: 25px;
+}
+#nV{
+    text-align: left;
+}
+.md-toggle-icon {
+    background: transparent url(../images/dropDown.png) no-repeat center center;
+    display: inline-block;
+    height: 24px;
+    margin: auto 0 auto auto;
+    float: right;
+speak: none;
+width: 24px;
+transition: transform 0.3s ease-in-out;
+-webkit-transition: -webkit-transform 0.3s ease-in-out;
+}
+.md-button span{
+    padding: 18px;
+    line-height: 40px;
+}
+.tabsdemoStaticTabs {
+    /*
+   * Animation styles
+   */ }
+.tabsdemoStaticTabs .sample {
+    height: 450px; }
+.tabsdemoStaticTabs #tab1-content {
+    background-color: #3F51B5; }
+.tabsdemoStaticTabs #tab2-content {
+    background-color: #673AB7; }
+.tabsdemoStaticTabs #tab3-content {
+    background-color: #00796B; }
+.tabsdemoStaticTabs .tabpanel-container {
+    display: block;
+    position: relative;
+    background: white;
+    border: 0px solid black;
+    height: 300px;
+    overflow: hidden; }
+.tabsdemoStaticTabs [role="tabpanel"] {
+    color: white;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+    position: absolute; }
+.tabsdemoStaticTabs [role="tabpanel"].ng-leave.ng-leave-active, .tabsdemoStaticTabs [role="tabpanel"].ng-enter {
+    top: -300px; }
+.tabsdemoStaticTabs [role="tabpanel"].ng-leave, .tabsdemoStaticTabs [role="tabpanel"].ng-enter.ng-enter-active {
+    top: 0; }
+.tabsdemoStaticTabs [role="tabpanel"].ng-leave {
+    z-index: 100; }
+.tabsdemoStaticTabs .tabpanel-container [role="tabpanel"] {
+    padding: 20px; }
+.tabsdemoStaticTabs .after-tabs-area {
+    padding: 25px; }
+

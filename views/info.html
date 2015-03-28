@@ -1,0 +1,100 @@
+<!--
+<md-toolbar class="demo-toolbar md-default-theme"style="border-radius: 5px">
+
+    <div class="md-toolbar-tools">
+        <span class="ng-binding">Basic Usage</span>
+        <span flex=""></span>
+
+        <md-button><md-icon md-svg-icon="images/user.svg" style="color: #fff; width: 40px; height: 40px;"></md-icon></md-button>
+    </div>
+</md-toolbar>
+-->
+<!--
+<div style="width: 100%; padding: 25px;">
+
+    <md-tabs md-selected="selectedIndex">
+        <md-tab ng-repeat="tab in tabs"
+                ng-disabled="tab.disabled"
+                label="{{tab.title}}">
+            <div class="demo-tab tab{{$index%4}}" layout="column" layout-fill layout-align="space-around center">
+                <div ng-bind="tab.content"></div>
+                <md-button class="md-primary md-raised" ng-click="removeTab( tab )">
+                    Remove Tab
+                </md-button>
+            </div>
+        </md-tab>
+    </md-tabs>
+    <form ng-submit="addTab(tTitle,tContent)"flex layout-align="center center" md-theme="header">
+        <div layout="row" layout-sm="column" layout-margin layout-align="left center">
+            <md-input-container>
+                <label for="activeIndex">Active Index</label>
+                <input type="text" id="activeIndex" ng-model="selectedIndex" disabled>
+            </md-input-container>
+            <md-input-container>
+                <label for="activeTitle">Active Title</label>
+                <input type="text" id="activeTitle" ng-model="tabs[selectedIndex].title">
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column" layout-margin layout-align="left center">
+            <span class="title">Add a new Tab:</span>
+            <md-input-container>
+                <label for="label">Label</label>
+                <input type="text" id="label" ng-model="tTitle" class="form-control" >
+            </md-input-container>
+            <md-input-container>
+                <label for="content">Content</label>
+                <input type="text" id="content" ng-model="tContent">
+            </md-input-container>
+            <md-button class="add-tab md-primary" type="submit" style="max-height: 40px" >Add Tab</md-button>
+        </div>
+    </form>
+
+</div>
+-->
+
+
+
+<!--
+<div class="tabsdemoStaticTabs sample">
+    <md-tabs class="md-accent" md-selected="data.selectedIndex">
+        <md-tab id="tab1" aria-controls="tab1-content">
+            Item One
+        </md-tab>
+        <md-tab id="tab2" aria-controls="tab2-content"
+                ng-disabled="data.secondLocked">
+            {{data.secondLabel}}
+        </md-tab>
+        <md-tab id="tab3" aria-controls="tab3-content">
+            Item Three
+        </md-tab>
+    </md-tabs>
+    <ng-switch on="data.selectedIndex" class="tabpanel-container">
+        <div role="tabpanel"
+             id="tab1-content"
+             aria-labelledby="tab1"
+             ng-switch-when="0"
+             md-swipe-left="next()"
+             md-swipe-right="previous()" >
+
+        </div>
+        <div role="tabpanel"
+             id="tab2-content"
+             aria-labelledby="tab2"
+             ng-switch-when="1"
+             md-swipe-left="next()"
+             md-swipe-right="previous()" >
+            View for {{data.secondLabel}}<br/>
+            data.selectedIndex = 1
+        </div>
+        <div role="tabpanel"
+             id="tab3-content"
+             aria-labelledby="tab3"
+             ng-switch-when="2"
+             md-swipe-left="next()"
+             md-swipe-right="previous()" >
+            View for Item #3<br/>
+            data.selectedIndex = 2
+        </div>
+    </ng-switch>
+</div>
+-->

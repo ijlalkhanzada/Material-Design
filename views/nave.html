@@ -1,0 +1,86 @@
+<div layout="row" ng-controller="AppCtrl" >
+    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-sm')">
+        <md-toolbar layout="column">
+            <md-toolbar class="md-accent">
+                <h1 class="md-toolbar-tools"><img src="images/logo.png">
+                    <span style="font-size: 18px;">Material Design</span>
+                </h1>
+            </md-toolbar>
+        </md-toolbar>
+        <!--------------------------------------Start said Nave Ber--------------------------------------------->
+
+        <md-content md-theme="homeHeader">
+            <div layout="column" layout-align="space-around" class="md-raised">
+
+                <md-button class="md-button-toggle" ui-sref-active="info" ui-sref="nave.main" id="nV" ng-click="toggleMenu()">
+                    <md-icon md-svg-icon="images/x.svg" class="face"></md-icon>
+                    <span aria-hidden="true" class="md-toggle-icon" ng-class="{'toggled':isOpen }"></span>
+                    <span>Home</span></md-button>
+
+                <!--------------------------Start Drop Down------------------------------------------------------------------------>
+
+                    <md-content ng-show="isOpen" class="menu-toggle-list" aria-hidden="true"  layout="column" layout-align="space-around">
+                        <md-button class="md-raised" ui-sref-active="info"  ui-sref="nave.gridList">
+                            <span>Grid List</span></md-button>
+                        <md-button class="md-raised" ui-sref-active="info" ui-sref="nave.tooltip">
+                            <span>Tooltip</span></md-button>
+
+                        <md-button class="md-raised" ui-sref-active="info" ui-sref="nave.dialog">
+                            <span>Dilog Box</span></md-button>
+                        <md-button class="md-raised" ui-sref-active="info">
+                            <span>Bootam Sheet3</span></md-button>
+                    </md-content>
+                <!--------------------------End Drop Down------------------------------------------------------------------------>
+
+                <md-button ui-sref-active="info" ui-sref="nave.about" id="nV">
+                    <md-icon md-svg-icon="images/x.svg" class="face"></md-icon>
+                    <span>About</span></md-button>
+                <md-button ui-sref-active="info" ui-sref="nave.contact" id="nV">
+                    <md-icon md-svg-icon="images/x.svg" class="face"></md-icon>
+                    <span>Contact Us</span></md-button>
+                <md-button ui-sref-active="info" ui-sref="nave.info" id="nV">
+                    <md-icon md-svg-icon="images/x.svg" class="face"></md-icon>
+                    <span>More information</span></md-button>
+            </div>
+        </md-content>
+    </md-sidenav>
+    <!--------------------------------------End said Nave Ber--------------------------------------------->
+
+    <div layout="column" layout-fill flex md-theme="yellow">
+        <md-toolbar class="md-accent">
+            <!------------------------------------------------------------------------------------------->
+
+            <div class="md-toolbar-tools"  ng-click="toggleLeft()" tabindex="0" hide-gt-sm class="menuBtn">
+                <md-button class="docs-menu-icon" hide-gt-sm="" aria-label="Toggle Menu" ng-click="openLeftMenu()">
+                    <md-icon  class="ng-isolate-scope md-default-theme" aria-hidden="true" md-svg-src="images/boy.svg"></md-icon>
+                    </svg>
+                    </md-icon>
+                </md-button>
+
+
+                <div layout="row" flex="" class="fill-height">
+                    <div class="md-toolbar-item md-breadcrumb">
+                        <span class="md-breadcrumb-page ng-binding">Angular Material</span>
+                    </div>
+                    </div>
+            </div>
+            <!------------------------------------------------------------------------------------------->
+        </md-toolbar>
+        <md-content style="margin: 25px">
+            <md-toolbar class="demo-toolbar md-default-theme"style="border-radius: 5px">
+
+                <div class="md-toolbar-tools">
+                    <span class="ng-binding">{{title}}</span>
+                    <span flex=""></span>
+
+                    <md-button><md-icon md-svg-icon="images/user.svg" style="color: #fff; width: 40px; height: 40px;"></md-icon></md-button>
+                </div>
+            </md-toolbar>
+
+            <ui-view flex></ui-view>
+
+        </md-content>
+    </div>
+</div>
+
+
